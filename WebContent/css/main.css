@@ -1,0 +1,265 @@
+@CHARSET "UTF-8";
+
+html {
+	overflow-y:scroll
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18pt;
+	padding-bottom: 1.5em;
+	
+	
+}
+
+
+@media only screen and (max-width: 480px) {
+	body {
+		font-size: 14pt;
+	}
+	
+}
+
+.reports a {
+	border-bottom: 1px black dotted;
+}
+
+.gsc-search-box tr input {
+	height: 2em;
+	font-size: 18pt;
+}
+
+div.search {
+	max-width: 1280px;
+	width: 90vw;s
+}
+
+div.search > div, div.search > div > div {
+	max-width: 1280px;
+	width: 90vw;
+}
+
+div.search td.gsc-search-button {
+	display: none;
+}
+
+
+div.search form.gsc-search-box > table {
+	width: 300px;
+	align:center;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid black;
+	margin-bottom: 2em;
+}
+
+div.search .gsc-search-box td.gsc-input {
+	height: 2em;
+}
+
+input::placeholder {
+	color: black;
+	font-size: 18pt;
+	height: 2em;
+}
+
+div.search .gsc-search-box .gsc-input>input:hover,
+div.search .gsc-input-box-hover {
+	border: 0px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+div.search .gsc-search-box .gsc-input>input:focus,
+div.search .gsc-input-box-focus {
+	border: 0px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+	
+div.search .gsc-input-box { 
+	border: 0px;
+	width:300px;
+}
+
+
+div {
+	float: left;
+	margin: 0px;
+	padding: 0px;	
+}
+
+div.main_content {
+	width: 90vw;
+	max-width: 1280px;
+	min-height: 100vh;
+	clear: both;
+}
+
+div.main_menu {
+	position: relative;
+	width: 90vw;
+	max-width: 1280px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%) }
+}
+
+div.main_menu > div.menu {
+	position: relative;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 100%;
+	clear: both;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+h1.reporting {
+	text-align: left;
+	margin-bottom:0px;
+}
+
+h1.reporting > span {
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.director_mugs {
+	display: flex;
+	flex-wrap: wrap;
+	width: 90vw;
+	max-width: 1280px;
+	justify-content: space-between;
+	align-items: stretch;
+	margin-bottom: 2em; 
+}
+
+.director_mugs > .caption img, .director_mugs > .caption object {
+	width: 150px;
+	height: 225px;
+}
+
+.director_mugs > .caption > p.title {
+	padding: 0pt;
+	margin-top: 0pt;
+	font-size: 75%;
+}
+
+p.bio {
+	font-size: 90%;
+	clear: both;
+}
+
+.director_mugs > .caption > p {
+	margin: 0pt;
+	margin-top: 1em;
+	margin-left: 20px;
+	margin-right: 20px;
+} 
+
+.director_mugs > .caption {
+	width: 150px;
+	font-size: 80%;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+
+div.main_menu > div.menu > ul:before{
+	position: relative;
+	display: flex;
+	content:url('../images/logo.gif');
+	transform: scale(0.50);
+	width: 172px;
+	height: 90px;
+	padding-right: 88px;
+	top: -65px;
+	left: -82px;
+	cursor:pointer;
+} 
+
+div.main_menu > div.menu > ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 50px;
+	margin-bottom: -30px;
+}
+
+div.main_menu > div.menu > ul > li {
+	height: 1.4em;
+	margin: 0px;
+	display: block;
+	float: left;
+}
+
+div.main_menu > div.menu > ul > li > a {
+	height: 1.4em;
+	display: block;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	white-space: nowrap;
+	padding-left: 10px;
+	padding-right: 13px;
+	padding-bottom: 1px;
+	padding-top: 2px;
+	border: none;
+}
+
+div.main_menu > div.menu > ul > li > a.current {
+	background-color:yellow;	
+}
+
+div.auxiliary_info > p{
+	position: relative;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50em;
+    clear:both;
+    text-transform: uppercase;
+    font-size: 60%;
+    margin-bottom: 1.5em;
+}
+
+@media only screen and (max-width: 480px) {
+	.director_mugs {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	div.main_menu > div.menu > ul { 
+		flex-direction: column;
+		margin-bottom: 0px;
+	}
+	
+	div.main_menu > div.menu {
+		margin-bottom: 1em;
+	}
+	input::placeholder {
+		font-size: 14pt;
+	}
+}
+}
+
+
+
